@@ -1,0 +1,20 @@
+---
+title: "Data Analysis and Statistical Inference - Data"
+author: "Mariame M"
+date: "September 21, 2014"
+output: pdf_document
+---
+
+
+```{r, echo=FALSE}
+load(url("http://bit.ly/dasi_gss_data"))
+
+# only keep count of siblings, degree and constant family income
+data <- gss[,c("sibs","degree","coninc")]
+```
+
+```{r}
+# first rows of data
+head(data, n=40)
+```
+
